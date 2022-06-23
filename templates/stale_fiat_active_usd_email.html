@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <center>
+
+        <h1>this is the response for stale fiat engine, active USD price!</h1>
+
+    </center>
+</head>
+
+<body>
+<center>
+    <p id="copy">The principal exchange for this {{pair_code}} is {{pe}},
+    it is calculated through the fiat engine with base pair {{base_pair}}. 
+    There has been no new trade activity for {{base_pair}} on {{pe}} since {{time_stamp}} 
+    with a price of {{price}}.<br><br>
+
+    You should be seeing updated pricing for {{pair_code}}
+    however since our methodology will convert {{base_counter_asset}} to USD 
+    and thus provide updated pricing for {{pair_code}}. 
+    Our methodology is performing as expected in this scenario and we stand by our pricing.
+    </p>
+    <button type="button" onclick="copyEvent('copy')">Copy</button>
+</center>
+</body>
+
+    <script>
+        function copyEvent(id)
+        {
+            var str = document.getElementById(id);
+            window.getSelection().selectAllChildren(str);
+            document.execCommand("Copy")
+        }
+    </script>
+
+</html>

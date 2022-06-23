@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1>stale fiat engine, active USD price</h1>
+</head>
+<body>
+
+    <form action="/stale_fiat_active_usd" method="POST">
+
+        <label for="pair_code"> pair code: </label><br>
+        <input type="text" id="pair_code" name="pair_code"><br>
+
+        <label for="pe"> pe: </label><br>
+        <input type="text" id="pe" name="pe"><br>
+
+        <label for="base_pair"> base pair: </label><br>
+        <input type="text" id="base_pair" name="base_pair"><br>
+
+        <label for="time_stamp"> time_stamp: </label><br>
+        <input type="time_stamp" id="time_stamp" name="time_stamp"><br>
+
+        <label for="price"> price: </label><br>
+        <input type="price" id="price" name="price"><br>
+
+        <label for="base_counter_asset"> base counter asset: </label><br>
+        <input type="text" id="base_counter_asset" name="base_counter_asset"><br>
+
+        <br><br>
+        <input type="submit" value="submit" name="submit"/>
+    </form>
+</body>
+</html>

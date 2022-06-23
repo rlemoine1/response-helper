@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>large movement</title>
+    <center>
+
+        <h1>this is the response for large movement!</h1>
+
+    </center>
+</head>
+
+<body>
+<center>
+    <p id="copy">The principal exchange for this pair is {{pe}}, 
+    and it is in the line with market expectations as we observe trading activity. 
+    Lukka Prime's methodology is performing as expected.</p>
+    <button type="button" onclick="copyEvent('copy')">Copy</button>
+</center>
+</body>
+
+    <script>
+        function copyEvent(id)
+        {
+            var str = document.getElementById(id);
+            window.getSelection().selectAllChildren(str);
+            document.execCommand("Copy")
+        }
+    </script>
+
+</html>
